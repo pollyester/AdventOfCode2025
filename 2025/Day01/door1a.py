@@ -1,5 +1,5 @@
 FILE_PATH = "input1a.txt"
-MODLUO = 100
+MODULO = 100
 pointer = 50
 amount_of_zeros = 0
 
@@ -12,14 +12,14 @@ for item in data:
 
     match direction:
         case 'L':
-            pointer = (pointer + distance) % MODLUO
+            pointer = (pointer + distance) % MODULO
         case 'R':
-            pointer = (pointer - distance) % MODLUO
+            pointer = (pointer - distance) % MODULO
 
     if pointer == 0:
         amount_of_zeros += 1
     elif pointer < 0:
-        pointer += MODLUO
+        pointer += MODULO
 
 print(f"Amount of zeros: {amount_of_zeros}")            
         
